@@ -1,0 +1,118 @@
+
+/* 
+Banner
+*/
+
+.banner-area  
+{    
+    background-image: url(./img/img-hero.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+}
+
+.banner-content h1 
+{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;    
+    padding-top: 20%
+}
+@media (max-width: 767px) 
+{
+    .banner-content h1 
+    {
+        padding-top: 25%
+    }
+}
+
+.banner-content h3 
+{
+    color: white;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 1.5em;
+    font-weight: 100
+}
+
+
+/*
+Projets
+*/
+.container-fluid
+{
+
+    overflow: hidden;
+    height: 60vh; 
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);   
+    padding: 0 3%
+}
+
+
+
+.container-fluid:nth-child(odd)
+{
+    flex-direction: row-reverse !important;
+}
+
+
+.container-fluid:nth-child(odd) .p-2.left h2
+{
+    color: #5BD1D7;
+}
+
+
+.container-fluid:nth-child(odd) .p-2.left .pj-open p
+{
+
+    color: #5BD1D7;
+}
+
+
+.container-fluid:nth-child(odd)  .p-2.left .pj-open .pj-icon svg .cls-1
+{
+
+    stroke: #5BD1D7;
+}
+
+.container-fluid .p-2.left h2
+{
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 2em;
+    color: #FF502F;
+    padding: 5% 0
+}
+
+.container-fluid .p-2.left p
+{
+    font-family: Merriweather;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 150%;
+    letter-spacing: 0.035em
+}
+
+.container-fluid .p-2.left .pj-open
+{
+    text-align: center;
+}
+.container-fluid .p-2.left .pj-open p
+{
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 1em;
+    color: #FF502F; 
+}
+
+.container-fluid .p-2.left .pj-open .pj-icon
+{
+    width: 15%;
+    margin: 0 50%;
+    transform: translateX(-50%)
+}

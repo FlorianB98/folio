@@ -1,0 +1,30 @@
+html, body
+{
+    height: 100%;
+    position: relative
+}
+
+/*
+    Navbar
+*/
+
+.nav .nav-item
+{
+    text-transform : uppercase;
+    list-style-type: none;
+    margin: 2% 5%
+}
+
+.nav .nav-item .nav-link 
+{
+    text-decoration : none;
+    font-family: Montserrat;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+}
+
+strong
+{
+    font-weight: 600;
+}

@@ -1,0 +1,40 @@
+{% extends "pages/base/project_base.twig" %}
+
+{% block header %}
+    {% include 'partials/header-project.twig' %}
+{% endblock header %}
+
+{% block content %}
+{# mettre le titre depuis la base de donnée #}
+    <div class="container-fluid d-flex flex-column ">
+        <div class="p-2 description ">
+            <h2>{{ data_project.title }}</h2>
+            {{ data_project.description }}
+        </div>    
+        <div class="p-2">
+            <div class="pj-img"><img src ="../../../assets/img/{{data_project.category}}/{{data_project.name1}}.png"></div>
+        </div>
+        <h3>Collaborateurs :</h3>
+        <div class="d-flex justify-content-around">
+            <div class="p-2">Ivan Haliz</div>
+            <div class="p-2">Jean Tenletrainsiflé</div>
+            <div class="p-2">Harry Stocrassie</div>
+            <div class="p-2">Jean-Paul Ussion</div>
+            <div class="p-2">Alain Verse</div>
+        </div>
+        {% if data_project.lien != null %}
+        <div class="pj-open">
+            <p>
+                Open
+            </p>
+            <div class="pj-icon">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36.22 36.22"><defs><style>.cls-1{fill:none;stroke:#FF502F;stroke-linecap:round;stroke-linejoin:round;}</style></defs><title>Asset 2</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><line class="cls-1" x1="13.11" y1="23.11" x2="23.11" y2="13.11"/><polyline class="cls-1" points="13.11 13.11 23.11 13.11 23.11 23.11"/><circle class="cls-1" cx="18.11" cy="18.11" r="17.61"/></g></g></svg>
+                </a>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+{% endblock content %}
