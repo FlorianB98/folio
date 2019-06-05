@@ -8,11 +8,9 @@ html, body
     Navbar
 */
 
-.nav .nav-item
+.nav
 {
-    text-transform : uppercase;
-    list-style-type: none;
-    margin: 2% 5%
+    padding: 2% 5%;
 }
 
 .nav .nav-item .nav-link 

@@ -1,3 +1,4 @@
+
 .wrap
 {    
     background-image: url(./img/img-hero.jpg);
@@ -19,7 +20,7 @@
     margin: 5%
 }
 
-.banner-area .p-2 .pj-img
+.banner-area .p-2.img img
 {
     padding: 5% 0
 }
@@ -42,4 +43,30 @@
     width: 10%;
     margin: 0 50%;
     transform: translateX(-50%)
+}
+
+/*
+Responsive project
+*/
+
+@media (max-width: 650px) 
+{   
+    .wrap
+    {
+        width: 100vw;
+    }
+    .wrap .banner-area
+    {
+        width: 80vw;
+        margin: 0 10%
+    } 
+    .wrap .banner-area h3
+    {
+        font-size: 1em
+    }       
+    .wrap .banner-area .p-2.description
+    {
+        font-size: 0.8em;
+    }
+
 }

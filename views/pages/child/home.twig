@@ -5,17 +5,13 @@
 {% endblock header %}
 
 {% block title %}
-    <div class="single_slide_banner">
-        <div class="container">
-            <div class="row  fullscreen d-flex ">
-                <div class="banner-content align-items-center col-lg-12  justify-content-center">
-                    <h1>Florian <strong>Brunet</strong></h1>
-                        <h3>Web developer portfolio</h3>
-                    </div>
-                </div>
-            </div>
+    <div class="row  fullscreen d-flex ">
+        <div class="banner-content align-items-center col-lg-12  justify-content-center">
+            <h1>Florian <strong>Brunet</strong></h1>
+            <h3>Web developer portfolio</h3>
         </div>
-   </section>
+    </div>
+</section>
 {% endblock title %}
     {# rajouter ici l'affichage des données projets avec liens pour les pages#}
 
@@ -26,14 +22,14 @@
                 <h2>{{_data_project.title}}</h2>
                 <p>{{_data_project.introduction}}</p>
                 <div class="pj-open">
-                    <p>
-                        Open
-                    </p>
-                    <div class="pj-icon">
-                        <a href="{{ path_for('project', { cate:  _data_project.category , proj:  _data_project.name1  }) }}">
+                    <a href="{{ path_for('project', { cate:  _data_project.category , proj:  _data_project.name1  }) }}">
+                        <p>
+                            Open
+                        </p>
+                        <div class="pj-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36.22 36.22"><defs><style>.cls-1{fill:none;stroke:#FF502F;stroke-linecap:round;stroke-linejoin:round;}</style></defs><title>Asset 2</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><line class="cls-1" x1="13.11" y1="23.11" x2="23.11" y2="13.11"/><polyline class="cls-1" points="13.11 13.11 23.11 13.11 23.11 23.11"/><circle class="cls-1" cx="18.11" cy="18.11" r="17.61"/></g></g></svg>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
             </div>    
             <div class="p-2">
