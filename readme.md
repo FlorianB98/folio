@@ -1,10 +1,10 @@
-# Proj_Slim
+# Portfolio Slim
 
 
 
 ## What is this ?
 
-This is a Slim/Twig template to use for Portfolio with a mecanic of blocks.
+This is a Slim/Twig folio of Florian Brunet.
 
 
 ## Features
@@ -39,49 +39,6 @@ $settings['db']['pass'] = '';
 $settings['db']['name'] = 'portfolio_slim';
 ```
 
-
-## How to introduce your project
-
-Add a line in your database with a name1 (no caps), a title, a introduction (for the home page), a description (for the individual project page) and a category ('design' or 'dev'). You can add a linke but it's not mandatory. Next you will need 2 photos : 1 for the home (name of the photo : name1_vig.png) and 1 for the project page (name1_png).
-You can add a category : 
-```php
-// ./app/routes.php
-$app
-    ->get(
-        // add your category after design
-        '/project/{cate:dev|design}/{proj:[a-z]+}',
-        function($request, $response, $arguments)
-        {        
-            $viewData=[];
-            $viewData['seo'] = new \StdClass();
-            $viewData['seo']->title = 'Portfolio';
-```
-
-
-## What else?
-
-You still have to do the front (glhf, i hate that part). Use files in views/pages/child and dont forget to call your blocks in the base.
-
-###
-You can comment this in app/services to see Slim error :
-```php
-// 500
-$container['errorHandler'] = function($container)
-{
-    return function($request, $response) use($container)
-    {
-        $viewData=['code'=>500];
-        return $container['view']->render($response->withStatus(500), 'pages/base/error.twig',$viewData);
-    };
-};
-```
-
 ## Contributing
 * Brunet Florian
-* Bruno Simon
-
-### With the help
-* Jules Guesnon
-
-
-Dont forget to tag and to follow the github :ok_hand:
+* Eloïse Isautier
